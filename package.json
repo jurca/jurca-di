@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jurca/smart-di.git"
+    "url": "https://github.com/jurca/jurca-di.git"
   },
   "keywords": [
     "dependency injector",
@@ -18,7 +18,7 @@
   "author": "Martin Jurča <mjurca@centrum.cz>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jurca/smart-di/issues"
+    "url": "https://github.com/jurca/jurca-di/issues"
   },
   "browserify": {
     "transform": [
