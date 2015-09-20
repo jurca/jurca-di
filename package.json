@@ -1,0 +1,35 @@
+{
+  "name": "jurca-di",
+  "version": "0.0.0",
+  "description": "A dependency injector for ECMAScript with support for interfaces, type-based dependency configuration and default dependencies.",
+  "main": "es6/DependencyInjector.js",
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start test/karma.conf.js --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jurca/smart-di.git"
+  },
+  "keywords": [
+    "dependency injector",
+    "di",
+    "es6"
+  ],
+  "author": "Martin Jurča <mjurca@centrum.cz>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jurca/smart-di/issues"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "devDependencies": {
+    "babel-runtime": "^5.8.24",
+    "grunt": "^0.4.5",
+    "grunt-babel": "^5.0.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^3.2.0"
+  }
+}
