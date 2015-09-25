@@ -104,12 +104,12 @@ export default class DependencyInjector {
   get(classConstructor) {
     let implementation = this[PRIVATE.getImplementation](classConstructor)
 
-    if (!this[PRIVATE.instances].has(implementation)) {
+    if (this[PRIVATE.instances].has(implementation)) {
       return this[PRIVATE.instances].get(implementation)
     }
 
     let instance = this.create(implementation)
-    this[PRIVATE.instances].set(implementation)
+    this[PRIVATE.instances].set(implementation, instance)
 
     return instance
   }
@@ -318,7 +318,7 @@ export default class DependencyInjector {
       return interfaceConstructor
     }
 
-    return [PRIVATE.getImplementation](
+    return this[PRIVATE.getImplementation](
       this[PRIVATE.implementations].get(interfaceConstructor)
     )
   }
