@@ -80,7 +80,15 @@ export default class DependencyInjector {
      */
     this[PRIVATE.instantiatedClasses] = new Set()
 
-    Object.freeze(this)
+    ;[
+      PRIVATE.dependencies,
+      PRIVATE.implementations,
+      PRIVATE.instances,
+      PRIVATE.instantiatedClasses
+    ].forEach(property => Object.defineProperty(this, property, {
+      writable: false
+    }))
+    Object.seal(this)
   }
 
   /**
