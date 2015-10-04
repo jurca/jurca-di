@@ -1,6 +1,6 @@
 {
   "name": "jurca-di",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A dependency injector for ECMAScript with support for interfaces, type-based dependency configuration and default dependencies.",
   "main": "es6/DependencyInjector.js",
   "scripts": {

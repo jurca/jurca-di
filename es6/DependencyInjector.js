@@ -16,7 +16,7 @@ const PRIVATE  = Object.freeze({
   dependenciesGetterNameChanged: Symbol("dependenciesGetterNameChanged"),
   dependencies: Symbol("dependencies"),
   implementations: Symbol("implementations"),
-  instances: Symbol("instance"),
+  instances: Symbol("instances"),
   instantiatedClasses: Symbol("instantiatedClasses"),
 
   // method
