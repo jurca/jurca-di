@@ -16,9 +16,9 @@ npm install jurca-di
 ```
 
 The main class, `DependencyInjector` is located in the
-`es6/DependencyInjector.js` file. The project is written in ES2015 (ES6), so,
-if you need to use it in an environment that does not support ES2015, you will
-need a transpiler, for example [babel](https://babeljs.io/) or
+`es2015/DependencyInjector.js` file. The project is written in ES2015 (ES6),
+so, if you need to use it in an environment that does not support ES2015, you
+will need a transpiler, for example [babel](https://babeljs.io/) or
 [traceur](https://github.com/google/traceur-compiler). You may also need a JS
 module library/polyfill if you intend to use this library in a browser, for
 example [SystemJS](https://github.com/systemjs/systemjs).
@@ -39,7 +39,7 @@ that are passed in through the class constructor.
 To use this dependency injector, an instance must be first created:
 
 ```javascript
-import DependencyInjector from "jurca-di/es6/DependencyInjector"
+import DependencyInjector from "jurca-di/es2015/DependencyInjector"
 
 let di = new DependencyInjector()
 ```
