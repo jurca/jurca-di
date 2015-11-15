@@ -1,7 +1,7 @@
 
 var allProjectFiles = [];
 var allTestFiles = [];
-var PROJECT_REGEXP = /es6\/.*\.js$/i;
+var PROJECT_REGEXP = /es2015\/.*\.js$/i;
 var TEST_REGEXP = /(spec|test)\.js$/i;
 
 var pathToModule = function(path) {
