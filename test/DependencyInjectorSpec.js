@@ -1,5 +1,5 @@
 
-import DependencyInjector from "../es6/DependencyInjector"
+import DependencyInjector from "../es2015/DependencyInjector"
 
 describe("DependencyInjector", () => {
 

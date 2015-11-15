@@ -14,7 +14,7 @@ module.exports = function (config) {
     // list of files / patterns to load in the browser
     files: [
       'node_modules/karma-babel-preprocessor/node_modules/babel-core/browser-polyfill.js',
-      {pattern: 'es6/**/*.js', included: false},
+      {pattern: 'es2015/**/*.js', included: false},
       {pattern: 'test/**/*Spec.js', included: false},
       'test/main.js'
     ],
@@ -29,7 +29,7 @@ module.exports = function (config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'es6/**/*.js': ['babel'],
+      'es2015/**/*.js': ['babel'],
       'test/**/*Spec.js': ['babel']
     },
 
