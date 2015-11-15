@@ -1,8 +1,8 @@
 {
   "name": "jurca-di",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A dependency injector for ECMAScript with support for interfaces, type-based dependency configuration and default dependencies.",
-  "main": "es6/DependencyInjector.js",
+  "main": "es2015/DependencyInjector.js",
   "scripts": {
     "test": "./node_modules/karma/bin/karma start test/karma.conf.js --single-run"
   },
@@ -13,7 +13,8 @@
   "keywords": [
     "dependency injector",
     "di",
-    "es6"
+    "es6",
+    "es2015"
   ],
   "author": "Martin Jurča <mjurca@centrum.cz>",
   "license": "ISC",
